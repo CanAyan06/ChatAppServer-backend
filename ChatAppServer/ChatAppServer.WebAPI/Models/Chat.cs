@@ -14,9 +14,6 @@ namespace ChatAppServer.WebAPI.Models
         public string Message { get; set; } = string.Empty;
         public DataSetDateTime Date { get; set; }
 
-        public static implicit operator Chat(Chat v)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

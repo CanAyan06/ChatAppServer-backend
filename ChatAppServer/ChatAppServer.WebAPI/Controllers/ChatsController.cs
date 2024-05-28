@@ -13,7 +13,7 @@ namespace ChatAppServer.WebAPI.Controllers
     [ApiController]
     public sealed class ChatsController(
         ApplicationDbContext context,
-        IHubContext<ChatHub>) : ControllerBase
+      IHubContext<ChatHub> hubContext) : ControllerBase
 
     {
         [HttpGet]
